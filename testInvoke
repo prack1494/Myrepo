@@ -1,5 +1,5 @@
 library identifier: 'org.example@master', retriever: modernSCM([$class: 'GitSCMSource', remote: 'git@github.com:prack1494/testrepo2.git', traits: [[$class: 'jenkins.plugins.git.traits.BranchDiscoveryTrait']]])
 
 node('master'){
-		 invokeApp()
+		 invokeApp(var1: "HEY")
 }
